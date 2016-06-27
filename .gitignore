@@ -2,3 +2,4 @@ $ cat .gitignore
     # exclude pdf assignment files
 *.pdf
 /**/lib
+*~
