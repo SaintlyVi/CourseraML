@@ -216,5 +216,8 @@ for i = 1:length(lambda_vec)
             lambda_vec(i), error_train(i), error_val(i));
 end
 
+[x, ix] = min(error_val);
+lambda_min = lambda_vec(ix)
+
 fprintf('Program paused. Press enter to continue.\n');
 pause;

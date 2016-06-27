@@ -58,7 +58,7 @@ for i = 1:m
 	theta = trainLinearReg(X(1:i, :), y(1:i), lambda);
 	J = linearRegCostFunction(X(1:i, :), y(1:i), theta, 0);
 	error_train(i) = J;
-% Compute train/cross validation errors using training examples 
+  % Compute train/cross validation errors using training examples 
 	J = linearRegCostFunction(Xval, yval, theta, 0);
 	error_val(i) = J;
 end
