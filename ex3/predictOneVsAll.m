@@ -30,7 +30,7 @@ X = [ones(m, 1) X];
 %       for each row.
 %       
 
-[certainty, p] = max(X * all_theta', [], 2);
+[certainty, p] = max(sigmoid(X * all_theta'), [], 2);
 
 
 
