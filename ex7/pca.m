@@ -20,9 +20,9 @@ S = zeros(n);
 %       number of examples).
 %
 
-Sigma = 1/m * X' * X;
+Sigma = 1/m * X' * X; %compute covariance matrix
 
-[U,S,V] = svd(Sigma);
+[U,S,V] = svd(Sigma); %extract eigenvectors from covariance matrix
 
 
 
